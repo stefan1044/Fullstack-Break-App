@@ -1,0 +1,31 @@
+.backgroundImage{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: -1;
+        
+    /* Preserve aspet ratio */
+    min-width: 70%;
+    min-height: 70%;
+}
+
+#LoginDiv{
+    margin: 50px;
+    background-color: rgb(94, 60, 50);
+    opacity: 60%;
+    padding: 50px;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+}
+
+#username, #password
+{
+    height: 30px;
+}
+
+#loginbutton
+{
+    height: 50px;
+    width: 200px;
+}

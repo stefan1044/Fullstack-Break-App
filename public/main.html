@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0" />
+    <title>Coffee Break</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-image: url(../src/media/background.jpg);">
+    <noscript>Please enable javascript for this app to work.</noscript>
+
+    <div id="navbar-animmenu">
+        <ul class="show-dropdown main-navbar">
+            <li>
+                <button onclick="getcalendar()"><i class="far fa-clone"></i>Calendar</button>
+            </li>
+            <li>
+                <button onclick="getprofile()"><i class="far fa-calendar-alt"></i>Profile</button>
+            </li>
+            <li>
+                <button onclick="newmeeting()"><i class="far fa-chart-bar"></i>New Meeting</button>
+            </li>
+            <div class="search-container" style="margin-left: 500px;float: left;" ;>
+                <datalist id="suggestions">
+                    <option id="option1"></option>
+                    <option id="option2"></option>
+                    <option id="option3"></option>
+                    <option id="option4"></option>
+                    <option id="option5"></option>
+                </datalist>
+                <input type="text" placeholder="Search.." name="search" id="search" list="suggestions">
+                <button type="submit" onclick="searchuser(search.value)"><i class="fa fa-search"></i></button>
+            </div>
+            <li>
+                <button onclick="logout()" class="logoutButton">Log out</button>
+            </li>
+
+        </ul>
+    </div>
+    <div id="maincontent">
+        <!--<button class="calendarbutton" id="ora1" onclick="togglecalendarbutton(this.id)">8:00 - 9:00</button>
+        <button class="calendarbutton" id="ora2" onclick="togglecalendarbutton(this.id)"></button>-->
+
+    </div>
+    <script src="../src/scripts/testjs.js"></script>
+    <script src="../src/scripts/main.js"></script>
+</body>
+
+</html>
